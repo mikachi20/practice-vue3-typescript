@@ -20,7 +20,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-typescript": "^4.5.15",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
@@ -42,10 +42,12 @@
       "eslint:recommended",
       "@vue/typescript/recommended",
       "@vue/prettier",
-      "@vue/prettier/@typescript-eslint"
+      "@vue/prettier/@typescript-eslint",
+      "@vue/typescript"
     ],
     "parserOptions": {
-      "ecmaVersion": 2020
+      "ecmaVersion": 2020,
+      "parser": "@typescript-eslint/parser"
     },
     "rules": {
       "vue/comment-directive": 0
